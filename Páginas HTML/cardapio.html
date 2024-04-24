@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 
 <head>
-    <title>Cardápio</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
     <meta name="author" content="Denise">
     <meta name="viewport" content="device-width">
-    <link rel="shortcut icon" href="Imagens/bell.ico" type="image/ico" sizes="32x32">
+    <link rel="shortcut icon" href="..\img\bell.ico" type="image/ico" sizes="32x32">
+
     <figure>
-        <img src="Imagens/logotipo.png" alt="logotipo" sizes="100X100">
+        <img src="C:\Users\Torre\Desktop\Tudo\Treino - AWS - DIO E OUTROS\PROZ_AWS\Projeto Restaurante\Projeto-Restaurante\img\logotipo.png" alt="logotipo" width="50" height="50">
     </figure>
     <figcaption>
-        <a href="#Home">[Home]</a>
-        <a href="#QuemSomos">[Quem Somos]</a>
-        <a href="#Cardapio">[Cardápio]</a>
-        <a href="#Reserva">[Reserva]</a>
+        <a href="./home.html">[Home]</a>
+        <a href="./quemsomos.html">[Quem Somos]</a>
+        <a href="./cardapio.html">[Cardápio]</a>
+        <a href="./reserva.html">[Reserva]</a>
     </figcaption>
+    <!--style type="text/css">
+        h1{
+            font-family: 'escrita';
+
+        }-->
+    <title>Cardápio</title>
 </head>
 
 <body>
     <h1>Cardápio</h1>
     <figure>
-        <img src="Imagens/mesa-de-jantar.jpg" alt="mesadejantar">
+        <img src="..\img\mesa-de-jantar.jpg" alt="mesadejantar" width="150" height="150">
     </figure>
     <div id="topo">
         <p>
-            Pratos espetaculares
+            <h2>Pratos espetaculares</h2>
+            
         </p>
-        <div>
+        <table border="2">
+            <tr>
+                <th>
+            <div>
+                <a href="#Café da Manhã">Café da Manhã</a>
+                <img src="..\img\cafe_da_manha.png" alt="cafe_da_manha" width="100" height="100">
+            </div></th>
 
-        </div>
+                <th>
+            <div>
+                <a href="#Entrada">Entrada</a>
+                <img src="..\img\entrada.png" alt="entrada" width="100" height="100">
+            </div></th>
+                <th>
+            <div>
+                <a href="#Almoço">Almoço</a>
+                <img src="..\img\almoco.png" alt="almoco" width="100" height="100">
+            </div></th>
+            </tr>
+            <tr>
+                <th>
+            <div>
+                <a href="#Café da Tarde">Café da Tarde</a>
+                <img src="..\img\cafe_da_tarde.png" alt="cafe_da_tarde" width="100" height="100">
+            </div>
+                <th>
+            <div>
+                <a href="#Jantar">Jantar</a>
+                <img src="..\img\jantar.png" alt="jantar" width="100" height="100">
+            </div>
+            <div>
+                <th>
+                <a href="#Sobremesa">Sobremesa</a>
+                <img src="..\img\sobremesa.png" alt="sobremesa" width="100" height="100">
+            </div>
+            </tr>
+        </table>
     </div>
 
+
+
 </body>
+
+</html>
