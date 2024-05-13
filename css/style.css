@@ -1,14 +1,14 @@
-#mesa-de-jantar{
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+body header figure {
+    margin: 10px 5px 10px 5px;
+    padding: center;
 }
 
-figcaption{
-    align-content: end;
+.logo {
+    float: left;
+    clear: both;
 }
 
-footer{
-    align-items: center;
+body header figcaption {
+    float: right;
 }
+
