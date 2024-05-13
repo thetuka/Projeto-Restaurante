@@ -1,14 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=WindSong:wght@400;500&display=swap');
+
+.italianno-regular {
+    font-family: "Italianno", cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(245, 237, 228);
+}
+
+body div h1 {
+    font-size: 200px;
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+}
+
 body header figure {
     margin: 10px 5px 10px 5px;
     padding: center;
 }
 
 .logo {
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
     float: left;
     clear: both;
+    background-image: rgb(245, 237, 228);
 }
 
 body header figcaption {
     float: right;
+}
+
+body div figure {
+    text-align: center;
+}
+
+.conteudo {
+    display: flex row;
+    align-items: center;
+}
+
+.descricao_prato h2 {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.descricao_prato h3 {
+    text-align: center;
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 30px;
+    margin: 2px 2px 2px 2px;
 }
 
