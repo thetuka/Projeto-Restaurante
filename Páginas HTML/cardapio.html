@@ -9,6 +9,7 @@
     <meta name="viewport" content="device-width">
     <link rel="shortcut icon" href="..\img\bell.ico" type="image/ico" sizes="32x32">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Cardápio</title>
     
 </head>
@@ -50,47 +51,62 @@
             <br>
             
         </p>
-
-        <table border ="4">
-            <thead>
-                <tr>
-                    <th>
-                        <a href="#Entrada">Entrada</a>
-                        <img src="../img/salada_chique.png" alt="entrada" width="150" height="150">
-                    </th>
-
-                    <th>
-                        <a href="#Almoço">Almoço</a>
-                        <img src="../img/almoco_chique.png" alt="almoco" width="150" height="150">
-                    </th>
-                </tr>
-                
-                <tr>
-                    <th>
-                        <a href="#Jantar">Jantar</a>
-                        <img src="../img/mesa_de_jantar_chique.png" alt="jantar" width="150" height="150">
-                    </th>
-
-                    <th>
-                        <a href="#Sobremesa">Sobremesa</a>
-                        <img src="../img/sobremesas_chique.png" alt="sobremesa" width="150" height="150">
-                    </th>
-                </tr>
-                    
-                <tr>
-                    <th>
-                        <div>
-                            <a href="#Bebidas">Bebidas</a>
-                            <img src="../img/bebidas_chique.png" alt="bebidas" width="150" height="150">
-                        </div>
-                    </th>
-                </tr>
-            </thead>
-        </table>
     </div>
 
-    <div>
-        <h1 id="Entrada">Entrada</h1>
+    <div class="centralizador">
+        <div class="container">
+            <div class="image-cell">
+                <td class="image-cell">
+                    <img src="../img/salada_chique.png" alt="entrada" class="opacity-image">
+                    
+                    <div> <a href="#Entrada" class="text-over-image">Entrada</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/almoco_chique.png" alt="almoco" class="opacity-image">
+                        
+                        <div> <a href="#Almoço" class="text-over-image">Almoço</a>
+                    </div>
+                </td>        
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/mesa_de_jantar_chique.png" alt="jantar" class="opacity-image">
+                        
+                        <div> <a href="#Jantar" class="text-over-image">Jantar</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/sobremesas_chique.png" alt="sobremesa" class="opacity-image">
+                        
+                        <div> <a href="#Sobremesa" class="text-over-image">Sobremesa</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/bebidas_chique.png" alt="bebidas" class="opacity-image">
+                        
+                        <div> <a href="#Bebidas" class="text-over-image">Bebidas</a>
+                    </div>
+                </td>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="Entrada">
+        <h1 class="Entrada">Entrada</h1>
 
         <table>
             <thead>

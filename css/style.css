@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=WindSong:wght@400;500&display=swap');
 
+
 .italianno-regular {
     font-family: "Italianno", cursive, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: black;
 }
 
 body {
     background-color: rgb(245, 237, 228);
+    
 }
 
 body div h1 {
@@ -56,3 +59,73 @@ body div figure {
     margin: 2px 2px 2px 2px;
 }
 
+.entrada {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* Isso garante que o centralizador tenha pelo menos a altura total da tela */
+}
+
+ .container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+    align-content: center; */
+    place-items: center;
+    justify-self: center;
+ }
+
+/* .table {
+    /* table-layout: fixed; */
+    /* width: 600px;
+
+} */ 
+
+.table td {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 150px;
+    
+}
+
+.image-cell {
+    position: relative;
+    text-align: center;
+    color: white;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 50px;
+
+}
+
+ .opacity-image {
+     width: 100%;
+     opacity: 0.4;
+}
+
+.Entrada {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
