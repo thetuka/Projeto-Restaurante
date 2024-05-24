@@ -69,8 +69,6 @@ body div figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* Isso garante que o centralizador tenha pelo menos a altura total da tela */
 }
 
  .container {
@@ -81,13 +79,7 @@ body div figure {
     align-content: center; */
     place-items: center;
     justify-self: center;
- }
-
-/* .table {
-    /* table-layout: fixed; */
-    /* width: 600px;
-
-} */ 
+}
 
 .table td {
     position: relative;
@@ -125,6 +117,92 @@ body div figure {
 }
 
 .Entrada {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    max-width: 400px;
+    /* Largura máxima do grid */
+    margin: auto;
+}
+
+.grid-item {
+    width: 150px;
+    /* Largura fixa das células */
+    height: 150px;
+    /* Altura fixa das células */
+    background-color: #ddd;
+    /* Cor de fundo para visualização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+        /* Ajuste a largura máxima para telas menores */
+    }
+
+    .grid-item {
+        width: 100px;
+        /* Ajuste a largura das células para telas menores */
+        height: 100px;
+        /* Ajuste a altura das células para telas menores */
+    }
+}
+
+.modal-body img {
+    width: 100%;
+    /* Faz a imagem ocupar 100% da largura do corpo do modal */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Remove espaços extras abaixo da imagem */
+}
+
+.modal-content {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 2rem;
+}
+
+.modal-title {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 4rem; !important
+    /* Título do modal maior */
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
+
+.Almoco {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Jantar {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Sobremesa {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Bebidas {
     font-family: "Italianno", cursive, sans-serif;
     color: black;
     text-align: center;
