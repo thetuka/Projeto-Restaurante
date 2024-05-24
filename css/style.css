@@ -1,14 +1,238 @@
-#mesa-de-jantar{
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=WindSong:wght@400;500&display=swap');
+
+
+.italianno-regular {
+    font-family: "Italianno", cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
 }
 
-figcaption{
-    align-content: end;
+body {
+    background-color: rgb(245, 237, 228);
+    
 }
 
-footer{
+body div h1 {
+    font-size: 200px;
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+}
+
+body header figure {
+    margin: 10px 5px 10px 5px;
+    padding: center;
+}
+
+.logo {
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+    clear: both;
+    background-image: rgb(245, 237, 228);
+}
+
+body header figcaption {
+    float: right;
+}
+
+body div figure {
+    text-align: center;
+}
+
+.conteudo {
+    display: flex row;
     align-items: center;
 }
+
+.descricao_prato h2 {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.descricao_prato h3 {
+    text-align: center;
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 30px;
+    margin: 2px 2px 2px 2px;
+}
+
+.entrada {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+    align-content: center; */
+    place-items: center;
+    justify-self: center;
+}
+
+.table td {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 150px;
+    
+}
+
+.image-cell {
+    position: relative;
+    text-align: center;
+    color: white;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 50px;
+
+}
+
+ .opacity-image {
+     width: 100%;
+     opacity: 0.4;
+}
+
+.Entrada {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    max-width: 400px;
+    /* Largura máxima do grid */
+    margin: auto;
+}
+
+.grid-item {
+    width: 150px;
+    /* Largura fixa das células */
+    height: 150px;
+    /* Altura fixa das células */
+    background-color: #ddd;
+    /* Cor de fundo para visualização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+        /* Ajuste a largura máxima para telas menores */
+    }
+
+    .grid-item {
+        width: 100px;
+        /* Ajuste a largura das células para telas menores */
+        height: 100px;
+        /* Ajuste a altura das células para telas menores */
+    }
+}
+
+.modal-body img {
+    width: 100%;
+    /* Faz a imagem ocupar 100% da largura do corpo do modal */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Remove espaços extras abaixo da imagem */
+}
+
+.modal-content {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 2rem;
+}
+
+.modal-title {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 4rem; !important
+    /* Título do modal maior */
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
+
+.Almoco {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Jantar {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Sobremesa {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.Bebidas {
+    font-family: "Italianno", cursive, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
+/* 
+  .grid-container1 {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(2, 150px);
+  }
+
+  .grid-item1 {
+      position: relative;
+      width: 300px;
+      height: 150px;
+  }
+
+  .grid-item1 img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+  }
+
+  .grid-item1 a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      color: white;
+  } */
