@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #e8ecec;
+  background-color: lightgray;
   color: black;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@ header {
 }
 
 header a {
-  color: white;
+  color: rgb(14, 13, 13);
   text-decoration: none;
   margin-right: 10px;
 }
@@ -67,7 +67,7 @@ button[type="submit"] {
 }
 
 footer {
-  background-color: #e8ecec;
+  background-color: lightgray;
   color: black;
   display: flex;
   justify-content: center;
