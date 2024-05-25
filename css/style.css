@@ -209,30 +209,98 @@ body div figure {
 }
 
 /* *-*-*-*-*-*-*-*-*-*-*-*- */
-/* 
-  .grid-container1 {
-      display: grid;
-      grid-template-columns: repeat(3, 300px);
-      grid-template-rows: repeat(2, 150px);
-  }
+ 
+/* PAGINA HOME */
 
-  .grid-item1 {
-      position: relative;
-      width: 300px;
-      height: 150px;
-  }
+/* *-*-*-*-*-*-*-*-*-*-*-*- */
 
-  .grid-item1 img {
-      width: 100%;
-      height: 100%;
-      opacity: 0.4;
-  }
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
 
-  .grid-item1 a {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-decoration: none;
-      color: white;
-  } */
+.carousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 0.5;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* Altere a cor conforme necessário */
+    font-family: "Italianno", cursive, sans-serif;
+    /* Sua fonte importada */
+    font-size: 100px;
+    /* Altere o tamanho conforme necessário */
+    text-align: center;
+    z-index: 2;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.endereco {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 50px;
+    padding: 25px 25px 25px 25px;
+    margin: 16px 16px 16px 16px;
+
+}
+
+footer div h3 {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.horario {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.pagamento {
+    font-family: "Italianno", cursive, sans-serif;
+    font-size: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.icones {
+    display: flex;
+    /* Cria um contexto flexível para os ícones */
+    justify-content: center;
+    /* Centraliza os ícones horizontalmente */
+    gap: 10px;
+    /* Espaço entre os ícones */
+ }
+
+footer {
+    width: 100%;
+}
+
