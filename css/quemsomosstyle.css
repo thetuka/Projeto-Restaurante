@@ -1,12 +1,55 @@
     
-    h1{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: gray;
-        font:60px;    
-    }
-    
-    p{
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        font: 60px; 
-    }
+   @import url('https://fonts.googleapis.com/css2?family=Italianno&family=WindSong:wght@400;500&display=swap');
+
+   .italianno-regular {
+       font-family: "Italianno", cursive, sans-serif;
+       font-weight: 200;
+       font-style: normal;
+       color: black;
+   }
+   
+   body{
+       background-color: rgb(245, 237, 228);
+   }
+       
+   
+   h1{
+       color: black; 
+       text-align: left;
+       font-size: 35px;
+   
+   }
+   
+   p{
+       span {font-size: 3em};
+       color: black;
+       text-align: center;
+       line-height: 1.6em;
+       font-size: 22px;
+       letter-spacing: 1px;
+       word-spacing: 2px;
+     
+   }
+   
+   .carousel {
+       position: center;
+       width: 100%;
+       height: 500px;
+       margin: auto;
+       overflow: hidden;
+   }
+   
+   .carousel img {
+       width: 100%;
+       height: 500px;
+       object-fit: cover;
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0;
+       transition: opacity 2s ease-in-out;
+   }
+   
+   .carousel img.active {
+       opacity: 1;
+   }
