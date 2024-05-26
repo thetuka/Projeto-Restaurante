@@ -22,6 +22,8 @@
    p{
        span {font-size: 3em};
        color: black;
+   }
+   p{
        text-align: center;
        line-height: 1.6em;
        font-size: 22px;
