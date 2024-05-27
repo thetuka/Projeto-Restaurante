@@ -7,50 +7,70 @@
        font-style: normal;
        color: black;
    }
-   body{
-       background-color: rgb(245, 237, 228);
-   }
-       
-   
-   h1{
-       color: black; 
-       text-align: left;
-       font-size: 35px;
-   
-   }
-   
-   p{
-       span {font-size: 3em};
-       color: black;
-   }
-   p{
-       text-align: center;
-       line-height: 1.6em;
-       font-size: 22px;
-       letter-spacing: 1px;
-       word-spacing: 2px;
-     
-   }
-   
-   .carousel {
-       position: center;
-       width: 100%;
-       height: 500px;
-       margin: auto;
-       overflow: hidden;
-   }
-   
-   .carousel img {
-       width: 100%;
-       height: 500px;
-       object-fit: cover;
-       position: absolute;
-       top: 0;
-       left: 0;
-       opacity: 0;
-       transition: opacity 2s ease-in-out;
-   }
-   
-   .carousel img.active {
-       opacity: 1;
-   }
+
+body{
+
+    height: 100%;
+    margin: 0;
+    background-color: rgb(245, 237, 228);
+}
+nav{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    
+}
+figure {
+    width: left;
+}
+h1{
+    color: black;
+    text-align: center;
+    padding: 1%;
+    font-size: 70px;
+    margin-left: 3;
+    margin-right: auto;
+    font-weight: 700;
+
+}
+
+p{
+    span {font-size: 3em};
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    
+}
+p{
+    margin-top: 0px;
+    line-height: 25px;
+    font-size: 26px;
+    
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height:500px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 0.5;
+}
+
