@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reserva.css">
-    <title>Cardápio</title>
+    <script src="/Java/java.reserva"></script>
+    <title>Reserva</title>
 </head>
 <body>
     <header>
+        <div id="cabeçalho">
         <img id="inicio"  width="200" src="/img/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante">
         <nav>
         <a href="./home.html">[Home]</a>
         <a href="./quemsomos.html">[Quem Somos]</a>
         <a href="./cardapio.html">[Cardápio]</a>
         <a href="./reserva.html">[Reserva]</a>
-        </a>
-      </ul>
+    </div>  
+    </ul>
     </header>
     <main>
-        <div>
+        <div id="Corpo">
         <form action="">
         <p><strong><h1>Reserva</h1></strong> </p>
         <label for="Nome">Nome:</label>
@@ -26,11 +28,11 @@
          <label for="Telefone">Telefone:</label>
          <input type="tel" name="Telefone" id="Telefone"> <br>
          <label for="Email">Email:</label>
-         <input type="email" name="Email" id="Email">
-         <label for="Data">Data:</label>
-         <input type="date" name="Data" id="Data"> <br>
+         <input type="email" name="Email" id="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+         <label for="Data/hora">Data/Hora:</label>
+         <input type="datetime-local" name="Data/hora" id="Data/hora"> <br>
          <label for="Comentário">Comentário:</label><br>   
-         <textarea name="Comentário" id="Comentário" cols="50" rows="10"></textarea> <br>
+         <textarea name="Comentário" id="Comentário" cols="100" rows="20"></textarea> <br>
          <button type="submit">Enviar</button>
         </form>
          </div>
