@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=WindSong:wght@400;500&display=swap');
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +8,11 @@ body {
 }
 
 header {
-  background-color: lightgray;
+  background-color: white;
   color: black;
   display: flex;
   justify-content: space-between;
+  align-items: end;
   padding: 10px 20px;
 }
 
@@ -24,6 +28,7 @@ header a {
   align-items: center;
   height: 80vh;
   background-color: #f2f2f2;
+  margin: 8px;
 }
 
 form {
@@ -67,16 +72,17 @@ button[type="submit"] {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: white;
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
+  margin-top: 150px;
   height: 10vh;
-}
-
-footer a {
-  color: white;
   text-decoration: none;
   margin-left: 10px;
+  font-family: "Italianno", cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
 }
