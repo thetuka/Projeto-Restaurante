@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denise">
+    <meta name="viewport" content="device-width">
+    <link rel="shortcut icon" href="..\img\bell.ico" type="image/ico" sizes="32x32">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Vanilla Restaurante - Cardápio</title>
+    
+</head>
+
+<body>
+    
+
+    <header>
+
+        <figure>
+            <img id="inicio" width="100" src="../img/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante" class="logo">
+        </figure>
+        
+        <figcaption>
+            <a href="./home.html">Home</a>
+            <a href="./quemsomos.html">Quem Somos</a>
+            <a href="./cardapio.html">Cardápio</a>
+            <a href="./reserva.html">Reserva</a>
+        </figcaption>
+
+
+    </header>
+
+    <div class="conteudo">
+        <h1 class="italianno-regular">Cardápio</h1>
+        
+
+        <div class="janela">
+            <figure >
+                <img src="..\img/mesa_chique_posta.png" alt="mesadejantar" width="500" height="450">
+            </figure>
+        </div>
+    </div>
+
+    <div class="descricao_prato"> 
+        <div id="topo"></div>
+
+        <p>
+            <h2>Pratos espetáculares</h2>
+            <p><h3>Todo prato é preparado com ingredientes frescos, que trazem muito mais sabor ao paladar.</h3></p>
+            <p><h3>Experimente a delicadeza de cada prato e se delicie com o melhor que podemos lhe proporciona.</h3></p>
+            <br>
+            
+        </p>
+        
+    </div>
+    
+    <div class="centralizador">
+        <div class="container">
+            <div class="image-cell">
+                <td class="image-cell">
+                    <img src="../img/salada_chique.png" alt="entrada" class="opacity-image">
+                    
+                    <div> <a href="#Entrada" class="text-over-image">Entrada</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/almoco_chique.png" alt="almoco" class="opacity-image">
+                        
+                        <div> <a href="#Almoço" class="text-over-image">Almoço</a>
+                    </div>
+                </td>        
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/mesa_de_jantar_chique.png" alt="jantar" class="opacity-image">
+                        
+                        <div> <a href="#Jantar" class="text-over-image">Jantar</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/sobremesas_chique.png" alt="sobremesa" class="opacity-image">
+                        
+                        <div> <a href="#Sobremesa" class="text-over-image">Sobremesa</a>
+                    </div>
+                </td>
+            </div>
+
+            <div class="image-cell">
+                <td class="image-cell">
+                        <img src="../img/bebidas_chique.png" alt="bebidas" class="opacity-image">
+                        
+                        <div> <a href="#Bebidas" class="text-over-image">Bebidas</a>
+                    </div>
+                </td>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Entrada">
+        <h1 class="Entrada">Entrada</h1>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="grid-item" data-toggle="modal" data-target="#modal1">
+            <img src="../img/ent_CollarGren.png" alt="collarGreen" width="150px" height="150px">
+        </div>
+        <div class="grid-item" data-toggle="modal" data-target="#modal2">
+            <img src="../img/ent_CrabRang.png" alt="crabrang" width="150px" height="150px">
+        </div>
+        <div class="grid-item" data-toggle="modal" data-target="#modal3">
+            <img src="../img/ent_creoleChiken.png" alt="creoleChiken" width="150px" height="150px">
+        </div>
+        <div class="grid-item" data-toggle="modal" data-target="#modal4">
+            <img src="../img/ent_porco.png" alt="porco" width="150px" height="150px">
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Collar Green</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/ent_CollarGren.png" alt="collarGreen">
+                </div>
+
+
+                <div class="modal-body">
+                    Três rolinhos fritos recheados com couve salteada e presunto. Servido com molho de pimenta doce. <br>
+                    <p>R$ 36,57</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Crab Rang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/ent_CrabRang.png" alt="Crab Rang">
+                </div>
+
+                <div class="modal-body">
+                    Wontons fritos recheados com caranguejo ralado, cebolinha e queijo. Servido com molho de pimenta doce. <br>
+                    <p>R$ 47,79</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Creole Chicken</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/ent_creoleChiken.png" alt="Creole Chicken">
+                </div>
+
+                <div class="modal-body">
+                    Nossos exclusivos nuggets de frango empanados com panko, temperados com Cajun e alecrim. Servido com nosso
+                    molho Vidalia de nogueira defumada. <br>
+                    <p>R$ 54,99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Toucinho</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/ent_porco.png" alt="Toucinho">
+                </div>
+
+
+                <div class="modal-body">
+                    Nada melhor do que começar a refeição com um delicioso toucinho, bem crocante, acompanhado de molho de alho, mini salada e vinagrete.
+                    <p>R$ 54,99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Almoço">
+        <h1 class="Almoco">Almoço</h1>
+    </div>
+    
+    <div class="grid-container">
+        <div class="grid-item" data-toggle="modal" data-target="#modal5">
+            <img src="../img/alm_Chiken.png" alt="Frango" width="150px" height="150px">
+        </div>
+
+        <div class="grid-item" data-toggle="modal" data-target="#modal6">
+            <img src="../img/alm_feijoada.png" alt="feijoada" width="150px" height="150px">
+        </div>
+
+        <div class="grid-item" data-toggle="modal" data-target="#modal7">
+            <img src="../img/alm_panqueca.png" alt="panqueca" width="150px" height="150px">
+        </div>
+        
+        <div class="grid-item" data-toggle="modal" data-target="#modal8">
+            <img src="../img/alm_fileMingnon.png" alt="carne" width="150px" height="150px">
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">BBQ Buffalo Wings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/alm_Chiken.png" alt="Frango">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Nossas famosas asinhas de soja veganas marinadas em molho barbecue cítrico e apimentado. Servido com molho rancho vegano
+                    e talos de aipo. <br>
+                    <p>R$ 36,57</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Feijoada Mineira</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/alm_feijoada.png" alt="feijoada">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Nada mais brasileiro que uma feijoada feita com carnes nobres, arroz soltinho temperado com azeite e louro, 
+                    uma couve manteiga refogada na medida certa sem esquecer a farofa de bacon. <br>
+                    <p>R$ 86,57</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Roll Cakes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/alm_panqueca.png" alt="collarGreen">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Panquecas feitas com massa leve e recheadas com ricota e queijo minas, temperados com alho poró, 
+                    salsa e azeite. Acompanha geléia de frutas vermelhas. <br>
+                    <p>R$ 46,78</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Medal of Winners</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/alm_fileMingnon.png" alt="carne">
+                </div>
+    
+    
+                <div class="modal-body">
+                    A parte mais nobre do boi, o filé mingnon, cortado em medalhão, assado por igual, deixando o sabor marcante 
+                    do corte. Cada medalhão acompanha um purê de mandioquinha e meia pêra assada, contrastando os sabores e texturas. <br>
+                    <p>R$ 99,24</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="Jantar">
+        <h1 class="Jantar">Jantar</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" data-toggle="modal" data-target="#modal9">
+            <img src="../img/jan_carneComPure.png" alt="carneComPure" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal10">
+            <img src="../img/jan_carneComVinho.png" alt="carneComVinho" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal11">
+            <img src="../img/jant_lagosta.png" alt="lagosta" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal12">
+            <img src="../img/jant_risotoTomate.png" alt="risotoTomate" width="150px" height="150px">
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Rindfleisch mit Risotto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/jan_carneComPure.png" alt="carneComRisoto">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Uma deliciosa peça de picanha cortada em tiras, mal passada, com sal grosso e alecrim ao lado 
+                    do fabuloso risoto de queijo com cenouras, para complementar.<br>
+                    <p>R$ 104,65</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Viande avec Vin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/jan_carneComVinho.png" alt="Frango">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Este prato traz uma redução de vinho para compor o sabor extremo do filé Mingnon,
+                    purê de mandioquinha e shimejis. Esse prato é pensado para quem ama explosão de sabores. <br>
+                    <p>R$ 103,77</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Lagosta Thermidor Gourmet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/jant_lagosta.png" alt="lagosta">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Lagosta grelhada ao ponto perfeito, servida com um molho cremoso de conhaque e mostarda Dijon, gratinada com queijo
+                    Gruyère e finalizada com ervas frescas. Acompanha risoto de açafrão e aspargos al dente.<br>
+                    <p>R$ 102,88</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Risoto de Tomate Seco ao Perfume de Manjericão</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/jant_risotoTomate.png" alt="risotoTomate">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Um risoto cremoso e envolvente, preparado com arroz arbóreo de primeira qualidade, lentamente cozido em um caldo de
+                    legumes caseiro. Enriquecido com tomates secos importados, que oferecem um sabor intenso e adocicado, e perfumado com
+                    folhas frescas de manjericão. Finalizado com lascas generosas de Parmigiano-Reggiano e um toque de azeite extra virgem.<br>
+                    <p>R$ 89,94</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Sobremesa">
+        <h1 class="Sobremesa">Sobremesa</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" data-toggle="modal" data-target="#modal13">
+            <img src="../img/sob_brigadeiroCopo.png" alt="brigadeiro" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal14">
+            <img src="../img/sob_mousseNinho.png" alt="mousseNinho" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal15">
+            <img src="../img/sob_tortaCereja.png" alt="tortaCereja" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal16">
+            <img src="../img/sob_bolo.png" alt="bolo" width="150px" height="150px">
+        </div>
+    </div>
+
+        <!-- Modais -->
+        <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel1">Brigadeiro de Copo com Lâminas de Ouro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <!-- Aqui você vai colocar a imagem -->
+                        <img src="../img/sob_brigadeiroCopo.png" alt="brigadeiro">
+                    </div>
+        
+        
+                    <div class="modal-body">
+                        Uma releitura sofisticada do clássico brigadeiro brasileiro. Este doce encantador é preparado com chocolate belga 70%
+                        cacau e leite condensado cozido lentamente até atingir a consistência perfeita. Servido em um elegante copo de cristal,
+                        é finalizado com uma camada de creme de baunilha de Madagascar e decorado com lâminas comestíveis de ouro 24k.<br>
+                        <p>R$ 33,44</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Mousse Douceur de Lait Ninho</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/sob_mousseNinho.png" alt="mousseNinho">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Uma mousse leve e aerada de leite Ninho, intercalada com camadas de biscoito champagne embebido em licor de framboesa.
+                    Decorada com frutas vermelhas frescas, servida em taças de chocolate para um final de refeição
+                    deslumbrante.<br>
+                    <p>R$ 51,67</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modais -->
+    <div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Torta de Cereja Negra e Mascarpone</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/sob_tortaCereja.png" alt="tortaCereja">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Uma base crocante de massa sablée é o leito para uma compota rica de cerejas negras frescas, cuidadosamente selecionadas
+                    e maceradas com um toque de kirsch. O recheio é suavizado com uma camada sedosa de creme de mascarpone, levemente
+                    adoçado. A torta é finalmente coroada com cerejas inteiras glaceadas e um fio de chocolate amargo. Servida com uma
+                    quenelle de sorvete de baunilha de Madagascar, esta torta é uma celebração dos sabores clássicos com um toque
+                    contemporâneo.<br>
+                    <p>R$ 42,11</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Bolo Velours Rouge</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/sob_bolo.png" alt="bolo">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Uma interpretação sofisticada do clássico Red Velvet, com camadas de bolo de veludo vermelho, intercaladas com um creme
+                    de queijo mascarpone e baunilha. Coberto com uma ganache de chocolate branco e decorado com pétalas de rosas
+                    cristalizadas e fios de ouro comestível.<br>
+                    <p>R$ 23,72</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Bebidas">
+        <h1 class="Bebidas">Bebidas</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" data-toggle="modal" data-target="#modal17">
+            <img src="../img/beb_aguaFrutas.png" alt="agua" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal18">
+            <img src="../img/beb_drink.png" alt="drink" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal19">
+            <img src="../img/beb_sucos.png" alt="sucos" width="150px" height="150px">
+        </div>
+    
+        <div class="grid-item" data-toggle="modal" data-target="#modal20">
+            <img src="../img/beb_wisky.png" alt="wisky" width="150px" height="150px">
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Água Mineral Natural e com Gás</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/beb_aguaFrutas.png" alt="agua">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Servida em garrafas de vidro elegantes, a água é a companhia perfeita para realçar os sabores refinados dos pratos. Com
+                    opções de água natural e com gás, ela é apresentada com fatias de limão, pepino ou hortelã para uma experiência
+                    refrescante e sofisticada.<br>
+                    <p>R$ 16,22</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Elegância Cítrica</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/beb_drink.png" alt="drink">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Um coquetel visualmente deslumbrante que captura a essência da sofisticação. Apresentando uma harmonia de sabores
+                    cítricos e notas herbais, este drink é servido em copos finamente lapidados que refletem a luz de maneira encantadora.
+                    Cada gole é uma celebração, perfeito para brindar momentos especiais.<br>
+                    <p>R$ 23,72</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Vitalidade Verdejante</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/beb_sucos.png" alt="bolo">
+                </div>
+    
+    
+                <div class="modal-body">
+                <strong>Delícia de Pitaya: </strong> Este suco exibe uma cor rosa vibrante, cortesia da exótica fruta pitaya. É uma bebida que
+                    não só encanta os olhos, mas também oferece um sabor delicado e refrescante. Ideal para ser apreciado em um ambiente
+                    sofisticado, este suco é a combinação perfeita de estilo e saúde.
+                    <br>
+                <strong>Essência de Clorofila: </strong>Com um tom verde esmeralda, este suco é um elixir de juventude. Feito com uma mistura
+                    de couve, espinafre e um toque de limão, é um detox natural que promove bem-estar e energia. Cada gole é um passo em
+                    direção ao equilíbrio e à serenidade.
+                    <br>
+                <strong>Ouro Líquido: </strong> Este suco tem a cor do sol e é tão energizante quanto. Uma fusão de manga, abacaxi e
+                    maracujá, oferece uma explosão tropical que desperta os sentidos. É a escolha perfeita para quem busca uma bebida
+                    revigorante e cheia de sabor.<br>
+                    <p>R$ 21,33 cada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal20" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Seleção Exclusiva de Whiskies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <!-- Aqui você vai colocar a imagem -->
+                    <img src="../img/beb_wisky.png" alt="bolo">
+                </div>
+    
+    
+                <div class="modal-body">
+                    Descubra nossa cuidadosa seleção de whiskies, onde cada gole conta a história de séculos de tradição e maestria. Desde o
+                    robusto e complexo Single Malt, envelhecido pacientemente em barris de carvalho, até o suave e refinado Blended Scotch,
+                    que combina notas amadeiradas e um toque defumado, nossa coleção é uma homenagem à arte da destilação. Permita-se ser
+                    transportado para as terras altas da Escócia com nosso Old Fashioned, um clássico atemporal com notas de caramelo e
+                    baunilha, ou surpreenda-se com o equilíbrio perfeito do Manhattan, uma sinfonia de sabores intensos e encorpados. Cada
+                    whisky é uma experiência única, uma viagem sensorial que promete deleitar os paladares mais exigentes<br>
+                    <p>R$ 48,15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <i>
+                <strong>
+                    © 2021 - TODOS OS DIREITOS RESERVADOS •
+                    <a href="https://github.com/thetuka/Projeto-Restaurante"
+                        target="_blank">
+                        <abbr title="Acessar o repositório do projeto no GitHub"> GRUPO 3
+                    </a>
+                </strong>
+            </i>
+        </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <a id="botaoTopo" href="#topo">Topo</a>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denise">
+    <meta name="viewport" content="device-width">
+    <link rel="shortcut icon" href="..\img\bell.ico" type="image/ico" sizes="32x32">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Vanilla Restaurante - Home</title>
+</head>
+
+<body>
+
+
+    <header>
+        <figure>
+            <img id="inicio" width="100" src="../img/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante"
+                class="logo">
+        </figure>
+
+        <figcaption>
+            <a href="./home.html">Home</a>
+            <a href="./quemsomos.html">Quem Somos</a>
+            <a href="./cardapio.html">Cardápio</a>
+            <a href="./reserva.html">Reserva</a>
+        </figcaption>
+    </header>
+
+
+<div class="carousel">
+    <div class="carousel-text">Vanilla Restaurante</div> <!-- Adicione seu texto aqui -->
+    <img src="../img/home_carroussel1.png" alt="Imagem 1" class="active">
+    <img src="../img/home_carroussel2.png" alt="Imagem 2">
+    <img src="../img/home_carroussel3.png" alt="Imagem 3">
+    <img src="../img/home_carroussel4.png" alt="Imagem 4">
+</div>
+
+<script>
+    let index = 0;
+    const images = document.querySelectorAll(".carousel img");
+    const maxIndex = images.length;
+
+    function updateCarousel() {
+        const current = document.querySelector(".carousel img.active");
+        current.classList.remove("active");
+        index = (index + 1) % maxIndex;
+        images[index].classList.add("active");
+    }
+
+    setInterval(updateCarousel, 3000); // Altere o tempo aqui para ajustar a velocidade da transição
+</script>
+
+    <footer>
+        <div class="footer-container">
+           
+            
+            <p class="endereco">Av. Savassi, 99 - São Leopoldo - SP - (11) 91234-5678</p>
+
+            <div class="icones">
+                <a href="#inicio"><img width="35" src="../img/logo_whatsapp.png" alt="logo whatsapp" title="link para whatsapp"></a>
+                <a href="#inicio"><img width="35" src="../img/logo_instagram.png" alt="logo instagram" title="link para instagram"></a>
+                <a href="#inicio"><img width="40" src="../img/logo_facebook.png" alt="logo facebook" title="link para facebook"></a>
+                <a href="#inicio"><img width="40" src="../img/logo_telegram.png" alt="logo telegram" title="link para telegram"></a>
+            </div>
+            
+            <h3> <strong>Horário de funcionamento</strong></h3>
+            <p class="horario">Terça à quinta: 11:00 ás 00:00 <br>
+                Sexta à domingo: 10:00 ás 01:00</p>
+
+            <h3><strong>Formas de pagamento</strong></h3>
+            <p class="pagamento">Aceitamos cartões de débito, crédito, dinheiro e pix</p>
+        </div>
+        <p><i><strong>© 2021 - TODOS OS DIREITOS RESERVADOS •<a href="https://github.com/thetuka/Projeto-Restaurante"
+                        target="_blank"><abbr title="Acessar o repositório do projeto no GitHub"> GRUPO 3</abbr></strong></a></i></p>
+    </footer>
+</body>
+</html>
