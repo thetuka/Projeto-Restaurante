@@ -11,26 +11,23 @@ body{
     
 }
 
-nav{
-    text-align: right;
-    position: right;
-    top: auto;
-    left: auto;
+body header figcaption {
+    float: right;
 }
 
+.logo {
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+    clear: both;
+    background-image: rgb(245, 237, 228);
+}
 a{
     
     text-decoration: none; 
     position: right;   
 }
-div#logo img {
-    position: right;
-    max-width:  100px;
-    top: 0px;
-    float: left;
-    clear: both;
-   
-}
+
 h1{
     color: black;
     text-align: center;
