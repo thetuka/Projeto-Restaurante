@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reserva.css">
+    <script src=""></script>
+    <title>Reserva</title>
+</head>
+<body>
+    <header>
+        <div id="cabeçalho">
+        <div></div>
+        <img id="inicio"  width="200" src="/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante">
+        </div>
+        <nav>
+        <a href="./home.html">Home</a>
+        <a href="./quemsomos.html">Quem Somos</a>
+        <a href="./cardapio.html">Cardápio</a>
+        <a href="./reserva.html">Reserva</a>
+    </div>  
+    </ul>
+    </header>
+    <main>
+        <div id="Corpo">
+        <form action="">
+        <h1>Reserva</h1>
+        <label for="Nome">Nome:</label>
+         <input type="text" name="Nome" id="Nome">
+         <label for="Telefone">Telefone:</label>
+         <input type="tel" name="Telefone" id="Telefone"> <br>
+         <label for="Email">Email:</label>
+         <input type="email" name="Email" id="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+         <label for="Data/hora">Data/Hora:</label>
+         <input type="datetime-local" name="Data/hora" id="Data/hora"> <br>
+         <label for="Comentário">Comentário:</label><br>   
+         <textarea name="Comentário" id="Comentário" cols="70" rows="10"></textarea> <br>
+         <button type="submit">Enviar</button>
+        </form>
+         </div>
+    </main>
 
+    <footer>
+
+        <div class="footer-container">
+        
+            <p class="endereco">Av. Savassi, 99 - São Leopoldo - SP - (11) 91234-5678</p>
+
+            <div class="icones">
+                <a href="#inicio"><img width="35" src="../img/logo_whatsapp.png" alt="logo whatsapp" title="link para whatsapp"></a>
+                <a href="#inicio"><img width="35" src="../img/logo_instagram.png" alt="logo instagram" title="link para instagram"></a>
+                <a href="#inicio"><img width="40" src="../img/logo_facebook.png" alt="logo facebook" title="link para facebook"></a>
+                <a href="#inicio"><img width="40" src="../img/logo_telegram.png" alt="logo telegram" title="link para telegram"></a>
+            </div>
+            
+            <h3><strong>Formas de pagamento</strong></h3>
+            <p class="pagamento">Aceitamos cartões de débito, crédito, dinheiro e pix</p>
+            
+            <h3> <strong>Horário de funcionamento</strong></h3>
+            <p class="horario">Terça à quinta: 11:00 ás 00:00 <br>
+                Sexta à domingo: 10:00 ás 01:00</p>
+
+        </div>
+        <p><i><strong>© 2021 - TODOS OS DIREITOS RESERVADOS •<a href="https://github.com/thetuka/Projeto-Restaurante"
+                        target="_blank"><abbr title="Acessar o repositório do projeto no GitHub"> GRUPO 3</abbr></strong></a></i></p>
+    </footer>
+</body>
+</html>
