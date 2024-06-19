@@ -22,6 +22,10 @@ body header figcaption {
     clear: both;
     background-image: rgb(245, 237, 228);
 }
+body div figure {
+    text-align: center;
+}
+
 a{
     
     text-decoration: none; 
