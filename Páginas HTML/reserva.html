@@ -2,67 +2,64 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reserva.css">
-    <script src=""></script>
-    <title>Reserva</title>
+    <meta name="author" content="Denise/Hellen">
+    <meta name="viewport" content="device-width">
+    <link rel="shortcut icon" href="..\img\bell.ico" type="image/ico" sizes="32x32">
+    <link rel="stylesheet" href="../css/reserva.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Vanilla Restaurante - Reserva</title>
 </head>
+
 <body>
     <header>
-        <div id="cabeçalho">
-        <div></div>
-        <img id="inicio"  width="200" src="/img/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante">
-        </div>
-        <nav>
-        <a href="./home.html">[Home]</a>
-        <a href="./quemsomos.html">[Quem Somos]</a>
-        <a href="./cardapio.html">[Cardápio]</a>
-        <a href="./reserva.html">[Reserva]</a>
-    </div>  
-    </ul>
+        <figure>
+            <img id="inicio" width="100" src="../img/logo.png" alt="Logotipo Restaurante" title="Logotipo Restaurante"
+                class="logo">
+        </figure>
+    
+        <figcaption>
+            <a href="./home.html">Home</a>
+            <a href="./quemsomos.html">Quem Somos</a>
+            <a href="./cardapio.html">Cardápio</a>
+            <a href="./reserva.html">Reserva</a>
+        </figcaption>
     </header>
-    <main>
-        <div id="Corpo">
-        <form action="">
-        <p><strong><h1>Reserva</h1></strong> </p>
-        <label for="Nome">Nome:</label>
-         <input type="text" name="Nome" id="Nome">
-         <label for="Telefone">Telefone:</label>
-         <input type="tel" name="Telefone" id="Telefone"> <br>
-         <label for="Email">Email:</label>
-         <input type="email" name="Email" id="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-         <label for="Data/hora">Data/Hora:</label>
-         <input type="datetime-local" name="Data/hora" id="Data/hora"> <br>
-         <label for="Comentário">Comentário:</label><br>   
-         <textarea name="Comentário" id="Comentário" cols="100" rows="20"></textarea> <br>
-         <button type="submit">Enviar</button>
-        </form>
-         </div>
-    </main>
 
-    <footer>
+    <div class="conteudo">
+        <h1 class="italianno-regular">Reservas</h1>
+    </div>
 
-        <div class="footer-container">
-        
-            <p class="endereco">Av. Savassi, 99 - São Leopoldo - SP - (11) 91234-5678</p>
-
-            <div class="icones">
-                <a href="#inicio"><img width="35" src="../img/logo_whatsapp.png" alt="logo whatsapp" title="link para whatsapp"></a>
-                <a href="#inicio"><img width="35" src="../img/logo_instagram.png" alt="logo instagram" title="link para instagram"></a>
-                <a href="#inicio"><img width="40" src="../img/logo_facebook.png" alt="logo facebook" title="link para facebook"></a>
-                <a href="#inicio"><img width="40" src="../img/logo_telegram.png" alt="logo telegram" title="link para telegram"></a>
+    <form>
+        <div class="formulario">
+            <div class="nomeetel">
+                <label for="nome" style="font-family: 'italianno'; font-size: 40px; ">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                
+                <label for="telefone" style="font-family: 'italianno'; font-size: 40px; ">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" >
             </div>
-            
-            <h3><strong>Formas de pagamento</strong></h3>
-            <p class="pagamento">Aceitamos cartões de débito, crédito, dinheiro e pix</p>
-            
-            <h3> <strong>Horário de funcionamento</strong></h3>
-            <p class="horario">Terça à quinta: 11:00 ás 00:00 <br>
-                Sexta à domingo: 10:00 ás 01:00</p>
 
+            <br>
+
+            <div class="emailedata">
+                <label for="email" style="font-family: 'italianno'; font-size: 40px; ">E-Mail:</label>
+                <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite seu e-mail">
+                
+                <label for="data" style="font-family: 'italianno'; font-size: 40px; ">Data e Horário:</label>
+                <input type="datetime-local" name="data" id="data">
+            </div>
+            <br>
+
+            <div class="comentario">
+                <textarea name="comentario" id="comentario" cols="50" rows="10" style="font-family: 'italianno'; font-size: 40px; "></textarea><br>
+
+                <button type="submit">Enviar</button>
+            </div>
         </div>
-        <p><i><strong>© 2021 - TODOS OS DIREITOS RESERVADOS •<a href="https://github.com/thetuka/Projeto-Restaurante"
-                        target="_blank"><abbr title="Acessar o repositório do projeto no GitHub"> GRUPO 3</abbr></strong></a></i></p>
-    </footer>
+
+    </form>
+
 </body>
 </html>
